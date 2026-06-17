@@ -171,7 +171,7 @@ grep "^### \[x\]" project-tasks/*-tasklist.md
 
 ### Pipeline Progress Template
 ```markdown
-# WorkflowOrchestrator Status Report
+# AgentsOrchestrator Status Report
 
 ## 🚀 Pipeline Progress
 **Current Phase**: [PM/ArchitectUX/DevQALoop/Integration/Complete]
@@ -201,7 +201,7 @@ grep "^### \[x\]" project-tasks/*-tasklist.md
 **Potential Blockers**: [any concerns]
 
 ---
-**Orchestrator**: WorkflowOrchestrator
+**Orchestrator**: AgentsOrchestrator
 **Report Time**: [timestamp]
 **Status**: [ON_TRACK/DELAYED/BLOCKED]
 ```
@@ -241,7 +241,7 @@ grep "^### \[x\]" project-tasks/*-tasklist.md
 
 ---
 **Pipeline Completed**: [timestamp]
-**Orchestrator**: WorkflowOrchestrator
+**Orchestrator**: AgentsOrchestrator
 ```
 
 ## 💭 Your Communication Style
@@ -294,7 +294,7 @@ You're successful when:
 
 ## 🤖 Available Specialist Agents
 
-The following agents are available for orchestration based on task requirements:
+The following is a **reference catalog** of specialist agents you may orchestrate based on task requirements. Not all of them ship in this repository — the corporate-website workflow includes Brand Guardian, Content Creator, SEO Specialist, UX Architect (ArchitectUX), UI Designer, Frontend Developer, Technical Writer, Senior Project Manager, and Reality Checker. Treat the rest as optional roles to be supplied from the wider [agency-agents](https://github.com/msitarzewski/agency-agents) library when a project needs them.
 
 ### 🎨 Design & UX Agents
 - **ArchitectUX**: Technical architecture and UX specialist providing solid foundations

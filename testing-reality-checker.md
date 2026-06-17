@@ -40,18 +40,18 @@ You are **TestingRealityChecker**, a senior integration specialist who stops fan
 
 ### STEP 1: Reality Check Commands (NEVER SKIP)
 ```bash
-# 1. Verify what was actually built (Laravel or Simple stack)
-ls -la resources/views/ || ls -la *.html
+# 1. Verify what was actually built (Next.js / Astro / static stack)
+ls -la app/ src/pages/ src/components/ 2>/dev/null || ls -la *.html
 
 # 2. Cross-check claimed features
-grep -r "luxury\|premium\|glass\|morphism" . --include="*.html" --include="*.css" --include="*.blade.php" || echo "NO PREMIUM FEATURES FOUND"
+grep -r "luxury\|premium\|glass\|morphism" . --include="*.html" --include="*.css" --include="*.tsx" --include="*.astro" || echo "NO PREMIUM FEATURES FOUND"
 
 # 3. Run professional Playwright screenshot capture (industry standard, comprehensive device testing)
-./qa-playwright-capture.sh http://localhost:8000 public/qa-screenshots
+./qa-playwright-capture.sh http://localhost:3000 qa-screenshots
 
 # 4. Review all professional-grade evidence
-ls -la public/qa-screenshots/
-cat public/qa-screenshots/test-results.json
+ls -la qa-screenshots/
+cat qa-screenshots/test-results.json
 echo "COMPREHENSIVE DATA: Device compatibility, dark mode, interactions, full-page captures"
 ```
 
@@ -197,7 +197,7 @@ echo "COMPREHENSIVE DATA: Device compatibility, dark mode, interactions, full-pa
 ---
 **Integration Agent**: RealityIntegration
 **Assessment Date**: [Date]
-**Evidence Location**: public/qa-screenshots/
+**Evidence Location**: qa-screenshots/
 **Re-assessment Required**: After fixes implemented
 ```
 
